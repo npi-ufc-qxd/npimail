@@ -1,10 +1,10 @@
-# NpiMail - Library to send email via UFC Quixadá Server Mail #
+# Npi-Mail - Library to send email via UFC Quixadá Server Mail #
 
 ## How to import ##
 
 Add this elements in your pom.xml
 
-**In <properties></properties>**
+**In `<properties></properties>`**
 ~~~xml
 <properties>
   <!-- NPI Mail Version -->
@@ -12,7 +12,7 @@ Add this elements in your pom.xml
 </properties>
 ~~~
 
-**In <repositories></repositories>**
+**In `<repositories></repositories>`**
 ~~~xml
 <repositories>
   <repository>
@@ -22,7 +22,7 @@ Add this elements in your pom.xml
 </repositories>
 ~~~
 
-**In <dependencies></dependencies>**
+**In `<dependencies></dependencies>`**
 ~~~xml
 <dependencies>
   <!-- NPI Mail -->
