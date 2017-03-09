@@ -41,10 +41,11 @@ Add this elements in your pom.xml
 @Autowired
 SendEmailService service;
 
-EmailBuilder emailBuilder = new EmailBuilder("UFC Quixada","naoresponda@quixada.ufc.br",
-													"Npimail Test", 
-													"destinatary@gmail.com", 
-													"MessageBody");
+EmailBuilder emailBuilder = new EmailBuilder("Nome do Remetente",
+											 "email@do.remetente.br",
+											 "Email Subject", 
+											 "destinatary@gmail.com", 
+											 "Message Body");
 Email email = new Email(emailBuilder);
 service.sendEmail(email);
 ~~~
@@ -54,10 +55,11 @@ service.sendEmail(email);
 @Autowired
 SendEmailService service;
 
-EmailBuilder emailBuilder = new EmailBuilder("UFC Quixada","naoresponda@quixada.ufc.br",
-													"Npimail Test", 
-													"destinatary@gmail.com", 
-													"MessageBody");
+EmailBuilder emailBuilder = new EmailBuilder("Nome do Remetente",
+											 "email@do.remetente.br",
+											 "Email Subject", 
+											 "destinatary@gmail.com", 
+											 "Message Body");
 Email email = new Email(emailBuilder);
 File file = new File("/path/to/your/file");
 email.setArquivo(file.getName(), file);
